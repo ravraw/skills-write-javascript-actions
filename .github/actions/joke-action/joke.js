@@ -12,9 +12,9 @@ const options = {
 
 async function getJoke() {
   const res = await fetch(options.uri, { options });
-  const joke = await res.joke;
-  console.log({ res, joke });
-  return joke;
+  const body = await res.body;
+  console.log({ body, joke });
+  return body.joke;
 }
 
 module.exports = getJoke;
