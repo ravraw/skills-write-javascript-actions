@@ -1,4 +1,4 @@
-import getJoke from "./joke";
+const getJoke = require("./joke");
 import { setOutput } from "@actions/core";
 
 async function run() {
