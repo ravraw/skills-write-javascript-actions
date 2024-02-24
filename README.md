@@ -15,47 +15,39 @@ _Write your own GitHub JavaScript Action and automate customized tasks unique to
 </header>
 
 <!--
-  <<< Author notes: Step 5 >>>
-  Start this step by acknowledging the previous step.
-  Define terms and link to docs.github.com.
+  <<< Author notes: Finish >>>
+  Review what we learned, ask for feedback, provide next steps.
 -->
 
-## Step 5: Add your action to the workflow file
+## Finish
 
-_Great job! :tada:_
+<img src=https://octodex.github.com/images/poptocat_v2.png alt=celebrate width=300 align=right>
 
-All of the following steps will add the action to the workflow file that’s already in the repo [`my-workflow.yml` file](/.github/workflows/my-workflow.yml)
+### Congratulations, you've completed this course!
 
-### :keyboard: Activity 1: Edit the custom action at the bottom of the workflow file.
+In this course, you've learned a lot about developing custom actions using JavaScript and Actions Toolkit.
 
-```yaml
-- name: ha-ha
-  uses: ./.github/actions/joke-action
-```
+## Publishing your actions
 
-Here is what the full file should look like (we’re using issues instead of the pull request event and removing the reference to the hello world action.)
+Publishing your actions is a great way to help others in your team and across the GitHub community. Although actions do not need to be published to be consumed, by adding them to the marketplace you make them easier to find.
 
-```yaml
-name: JS Actions
+Some notable actions you will find on the marketplace are:
 
-on:
-  issues:
-    types: [labeled]
+- [Actions for Discord](https://github.com/marketplace/actions/actions-for-discord)
+- [GitHub Action for Slack](https://github.com/marketplace/actions/github-action-for-slack)
+- [Jekyll action](https://github.com/marketplace/actions/jekyll-action)
+- [Run Jest](https://github.com/marketplace/actions/run-jest)
 
-jobs:
-  action:
-    if: ${{ !github.event.repository.is_template }}
-    runs-on: ubuntu-latest
+And that just scratches the surface of the 1600+ and counting actions you will find on the marketplace
 
-    steps:
-      - uses: actions/checkout@v3
-      - name: ha-ha
-        uses: ./.github/actions/joke-action
-```
+Follow [this guide](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/publishing-actions-in-github-marketplace#publishing-an-action) to learn how to publish your actions to the GitHub Marketplace
 
-You can make these changes in your repository by opening [`my-workflow.yml`](/.github/workflows/my-workflow.yml) in another browser tab and [editing the file directly](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files). Make sure to select the `Commit directly to the main branch` option.
+### What's next?
 
-Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
+- [Take another GitHub Skills course](https://github.com/githubskills).
+- We'd love to hear what you thought of this course in our [discussion board](https://github.com/orgs/skills/discussions/categories/write-javascript-actions).
+- [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
+- To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
 
 <footer>
 
