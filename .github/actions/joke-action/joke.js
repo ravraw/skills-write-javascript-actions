@@ -13,7 +13,7 @@ const options = {
 async function getJoke() {
   const res = await fetch(options.uri, { options });
   const body = await res.body;
-  console.log({ body, joke });
+  console.log({ body });
   return body.joke;
 }
 
