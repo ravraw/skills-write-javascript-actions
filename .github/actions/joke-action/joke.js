@@ -16,4 +16,4 @@ async function getJoke() {
   return joke;
 }
 
-export default getJoke;
+module.exports = getJoke;
