@@ -12,8 +12,8 @@ const options = {
 
 async function getJoke() {
   const res = await fetch(options.uri, { options });
-  const body = await res.body;
-  console.log({ body });
+  const joke = await res.json().then((data) => data.joke);
+  console.log({ joke });
   return body.joke;
 }
 
